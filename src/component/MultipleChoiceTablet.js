@@ -23,9 +23,9 @@ function MCT() {
 
     if (selectedAnswer !== null) {
       if (selectedAnswer === questions[currentQuestion].answer) {
-        history('/video2'); // Navigate to video2 page on correct answer
+        history('/congra'); // Navigate to video2 page on correct answer
       } else {
-        history('/working-environment'); // Navigate to working-environment page on incorrect answer
+        history('/congra'); // Navigate to working-environment page on incorrect answer
       }
       setSelectedAnswer(null); // Reset for the next question
     } else {

@@ -8,6 +8,7 @@ import Lobby from './component/VideoLobby';
 import MultipleChoiceLobby from './component/MultipleChoiceLobby';
 import Tablet from './component/VideoTablet';
 import MCT from './component/MultipleChoiceTablet';
+import Congratulations from './component/Congratulations';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/tablet" element={<Tablet />} />
         <Route path="/M-C-L" element={<MultipleChoiceLobby />} />
         <Route path="/M-C-T" element={<MCT />} />
+        <Route path="/congra" element={<Congratulations />} />
       </Routes>
  
   );
