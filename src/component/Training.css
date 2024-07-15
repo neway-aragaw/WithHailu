@@ -1,0 +1,45 @@
+/* Training.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0f4f8, #eff4f5,rgba(191, 222, 228, 0.584));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .training {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 70px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .training h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f39c12;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .training a {
+    text-decoration: none;
+    background: #f39c12;
+    color: #fff;
+  
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+  }
+  
+  .training a:hover {
+    background: #e67e22;
+  }
+  
