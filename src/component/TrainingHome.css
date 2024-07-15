@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #a3c8ed46, #4ca2af41);
+    background-color: grey;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body {
   
   .training-home {
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
+    background:grey;
     padding: 50px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -60,4 +60,40 @@ body {
   .button-group button:hover {
     background: #074baf;
   }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color:grey;
+    color: #343a40;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #343a40;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+
   

@@ -1,4 +1,4 @@
-/* Training.css */
+Training.css
 
 body {
     margin: 0;
@@ -42,4 +42,44 @@ body {
   .training a:hover {
     background: #e67e22;
   }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #343a40;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: #dce4ec;
+  }
+  
+ 
   

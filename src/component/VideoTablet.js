@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Working-env.css"
-import workingVideo from "../asset/videoPSA.mp4"
+import LobbyV from "../asset/C.MOV"
 
-function VideoFromLobby() {
+function Tablet() {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
   const navigate = useNavigate();
@@ -18,15 +18,15 @@ function VideoFromLobby() {
   };
 
   const handleVideoEnd = () => {
-    navigate('/multiple-choice2'); // Navigate to the multiple choice page
+    navigate('/M-C-T'); // Navigate to the multiple choice page
   };
 
   return (
     <div className="video-player">
-        <h1>video 2-Working From the Lobby</h1>
+        <h1>video 3-Understanding The Tablet</h1>
       <video
         ref={videoRef}
-        src={workingVideo}// Replace with the actual path to your video
+        src={LobbyV}// Replace with the actual path to your video
         controls
         onEnded={handleVideoEnd}
       />
@@ -37,4 +37,4 @@ function VideoFromLobby() {
   );
 }
 
-export default VideoFromLobby;
+export default Tablet;

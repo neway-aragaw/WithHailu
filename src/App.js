@@ -4,6 +4,10 @@ import Training from './component/Training'; // Assuming Training is in 'compone
 import TrainingHome from './component/TrainingHome';
 import WorkingEnvironment from './component/Working-environment';
 import MultipleChoiceTest from './component/MultipleChoice';
+import Lobby from './component/VideoLobby';
+import MultipleChoiceLobby from './component/MultipleChoiceLobby';
+import Tablet from './component/VideoTablet';
+import MCT from './component/MultipleChoiceTablet';
 
 function App() {
   return (
@@ -13,6 +17,10 @@ function App() {
         <Route path="/training-home" element={<TrainingHome />} />
         <Route path="/working-environment" element={<WorkingEnvironment />} />
         <Route path="/multiple-choice" element={<MultipleChoiceTest />} />
+        <Route path="/video2" element={<Lobby />} />
+        <Route path="/tablet" element={<Tablet />} />
+        <Route path="/M-C-L" element={<MultipleChoiceLobby />} />
+        <Route path="/M-C-T" element={<MCT />} />
       </Routes>
  
   );
