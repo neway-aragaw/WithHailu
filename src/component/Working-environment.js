@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Working-env.css"
-import workingVideo from "../asset/A.mp4"
+import workingVideo from "../asset/Lobby_video.mp4"
 
 function WorkingEnvironment() {
   const [isPlaying, setIsPlaying] = useState(false);
