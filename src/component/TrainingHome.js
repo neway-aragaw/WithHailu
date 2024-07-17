@@ -1,17 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./TrainingHome.css"
+import './TrainingHome.css';
 
 function TrainingHome() {
   return (
     <div className="training-home">
-      <h1>Welcome to the Training Home</h1>
+      <h1>Welcome to the Training </h1>
       <div className="button-group">
-        <Link to="/working-environment"><button>Understand the Working Environment</button></Link>
-        <Link to="/working-gate"><button>Working from the Gate</button></Link>
-        <Link to="/working-lobby"><button>Working from the Lobby</button></Link>
-        <Link to="/understanding-tablet"><button>Understanding the Tablet</button></Link>
-        <Link to="/administrative-issues"><button>Administrative Issues</button></Link>
+        <div className="button-item">
+          <p>Understand the Working Environment</p>
+          <Link to="/working-environment"><button>Start</button></Link>
+        </div>
+        <div className="button-item">
+          <p>Working from the Gate</p>
+          <Link to="/working-gate"><button>Start</button></Link>
+        </div>
+        <div className="button-item">
+          <p>Working from the Lobby</p>
+          <Link to="/working-lobby"><button>Start</button></Link>
+        </div>
+        <div className="button-item">
+          <p>Understanding the Tablet</p>
+          <Link to="/understanding-tablet"><button>Start</button></Link>
+        </div>
+        <div className="button-item">
+          <p>Administrative Issues</p>
+          <Link to="/administrative-issues"><button>Start</button></Link>
+        </div>
       </div>
     </div>
   );

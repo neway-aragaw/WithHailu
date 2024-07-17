@@ -36,4 +36,14 @@
       max-width: 90%; /* Adjust max-width for smaller screens */
     }
   }
+ 
+  
+  .video-title {
+    /* Your desired styles for the heading
+       e.g., font-size, color, text-align, margin, etc. */
+    font-size: 2rem;
+    color: #333; /* Example color */
+    text-align: center;
+    margin: 1rem 0; /* Example margin */
+  }
   

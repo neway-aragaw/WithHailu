@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import for navigation
 import "./MultipleWorking.css"
+
 const questions = [
   {
     question: 'The lobby is found inside the security check point',
@@ -12,6 +13,7 @@ const questions = [
 function MultipleChoiceTest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isCorrect, setIsCorrect] = useState(false); // State to track correct answer
   const history = useNavigate(); // Get history from react-router-dom
 
   const handleOptionChange = (event) => {
@@ -22,8 +24,13 @@ function MultipleChoiceTest() {
     event.preventDefault();
 
     if (selectedAnswer !== null) {
-      if (selectedAnswer === questions[currentQuestion].answer) {
-        history('/video2'); // Navigate to video2 page on correct answer
+      const isAnswerCorrect = selectedAnswer === questions[currentQuestion].answer;
+      setIsCorrect(isAnswerCorrect);
+
+      if (isAnswerCorrect) {
+        setTimeout(() => {
+          history('/video2'); // Navigate to video2 page after a delay
+        }, 3000); // Delay in milliseconds (3 seconds)
       } else {
         history('/working-environment'); // Navigate to working-environment page on incorrect answer
       }
@@ -36,6 +43,7 @@ function MultipleChoiceTest() {
   const handleNextQuestion = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
+      setIsCorrect(false); // Reset correct state for the next question
       setSelectedAnswer(null); // Reset for the next question
     } else {
       alert('You have reached the end of the test.');
@@ -60,6 +68,7 @@ function MultipleChoiceTest() {
             </label>
           ))}
           <br />
+          {isCorrect && <p>Correct!</p>} {/* Display "Correct" on correct answer */}
           <button type="submit">Submit Answer</button>
           {currentQuestion < questions.length - 1 && (
             <button type="button" onClick={handleNextQuestion}>

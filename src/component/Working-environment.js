@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./Working-env.css"
-import workingVideo from "../asset/Lobby_video.mp4"
+import "./Working-env.css"; // Assuming the CSS file exists
+import workingVideo from "../asset/Lobby_video.mp4";
 
 function WorkingEnvironment() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -18,20 +18,21 @@ function WorkingEnvironment() {
   };
 
   const handleVideoEnd = () => {
-    navigate('/multiple-choice'); // Navigate to the multiple choice page
+    navigate("/multiple-choice"); // Navigate to the multiple choice page
   };
 
   return (
     <div className="video-player">
-        <h1>video 1-Understanding the work Environment</h1>
+      <h1 className="video-title">video 1-Understanding the work Environment</h1>
       <video
         ref={videoRef}
-        src={workingVideo}// Replace with the actual path to your video
+        src={workingVideo} // Replace with the actual path to your video
         controls
         onEnded={handleVideoEnd}
+        width="120%" // Set video width to 80%
       />
       <button onClick={handlePlayPause}>
-        {isPlaying ? 'Pause' : 'Play'}
+        {isPlaying ? "Pause" : "Play"}
       </button>
     </div>
   );

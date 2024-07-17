@@ -6,8 +6,8 @@ function Training() {
   return (
     <div className="training">
       <h1>Interactive PSA Training</h1> 
-      <div>
-      <Link className='start-training' to="/training-home">Start</Link>
+      <div className='training_header'>
+      <Link  to="/training-home">Start</Link>
       </div>
     </div>
   );

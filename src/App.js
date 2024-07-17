@@ -9,6 +9,7 @@ import MultipleChoiceLobby from './component/MultipleChoiceLobby';
 import Tablet from './component/VideoTablet';
 import MCT from './component/MultipleChoiceTablet';
 import Congratulations from './component/Congratulations';
+import "./App.css"
 
 function App() {
   return (
