@@ -1,11 +1,11 @@
 body{
-    background-color: #14e78c;
+    background-color: rgb(6, 21, 44);
     color: black;
     
 }
 
 .training_header .start-training{
-    background-color: #fff;
+    background-color: rgb(6, 21, 44);
 }
 /* .training h1{
     color: silver;
@@ -24,8 +24,8 @@ body{
    }
 
    .training-home .button-group button {
-    background-color: #fff; /* Button background color */
-    color: #333; /* Button text color */
+    background-color:rgb(253, 165, 3); /* Button background color */
+    color: black; /* Button text color */
     border: 1px solid #ddd; /* Button border */
     padding: 10px 20px; /* Adjust padding as needed */
     border-radius: 5px;
@@ -33,19 +33,23 @@ body{
     font-size: 16px; /* Set button font size */
     margin: 5px; /* Add spacing between buttons */
   }
+  .button-group button:hover{
+    background-color: blue;
+    color: #ddd;
+  }
   .training {
    
-    
+    color: #fff;
    
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: rgb(6, 21, 44); /* Light blue background */
     font-family: sans-serif;
   }
   
   .training h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #333; /* Dark text */
+    color: white; /* Dark text */
   }
   
   .training_header {
@@ -65,14 +69,14 @@ body{
   }
   
   .training_header a:hover {
-    background-color: #0069d9; /* Darker blue on hover */
+    background-color: #03a8ef; /* Darker blue on hover */
   }
   .training-home {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: #92eac4; /* Light blue background */
+    background-color:rgb(6, 21, 44); /* Light blue background */
     font-family:'Times New Roman', Times, serif;
   }
   
@@ -83,11 +87,9 @@ body{
     color: #333; /* Dark text */
   }
   
-  /* .button-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+  .button-group button{
+    background-color: gold;
+  }
   
   .button-item {
     text-align: center;
@@ -99,7 +101,7 @@ body{
   }
   
   .button-item button {
-    background-color: #007bff;
+    background-color: gold;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -107,4 +109,26 @@ body{
     cursor: pointer;
     font-size: 16px;
   }
-  
+  .training-home p{
+    color: #ddd;
+    font-size: 1.2rem;
+  }
+  .button-item a button {
+    background-color: gold; 
+  }
+  .create_container{
+    
+      width: 100%;
+      max-width: 400px; /* Example width */
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+
+  }
+.video-player p{
+  color: #f3ecec;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }

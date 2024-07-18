@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 function Training() {
   return (
     <div className="training">
-      <h1>Interactive PSA Training</h1> 
+      <h2>Interactive PSA Training</h2> 
       <div className='training_header'>
-      <Link  to="/training-home">Start</Link>
+      <Link  to="/create-user">Start</Link>
       </div>
     </div>
   );

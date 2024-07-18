@@ -9,9 +9,9 @@
   
   .video-player video {
     width: 100%; /* Ensure video fills container width */
-    border: 1px solid #ddd; /* Optional border */
+    border: 2px solid #eadb08; /* Optional border */
     border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
   
   .video-player button {
@@ -19,10 +19,12 @@
     padding: 0.5rem 1rem;
     border: none; /* Remove default button border */
     border-radius: 5px;
-    background-color: #333;
+    background-color: rgb(208, 155, 22);
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    width: 100px;
+    height: 40px;
     transition: all 0.2s ease-in-out;
   }
   
@@ -42,8 +44,11 @@
     /* Your desired styles for the heading
        e.g., font-size, color, text-align, margin, etc. */
     font-size: 2rem;
-    color: #333; /* Example color */
-    text-align: center;
-    margin: 1rem 0; /* Example margin */
+    text-align: start;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    margin-bottom: 5px;
   }
-  
+  .video-player p {
+    line-height: 1.5; /* Adjust as needed (e.g., 1.2 for slightly tighter spacing) */
+    margin-top: 0.5rem; }
