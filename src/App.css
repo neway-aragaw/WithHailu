@@ -132,3 +132,9 @@ body{
     padding-bottom: 30px;
     font-family: 'Times New Roman', Times, serif;
   }
+.quick-directory a{
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+ background-color: #ddd;}

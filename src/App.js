@@ -4,15 +4,16 @@ import Training from './component/Training'; // Assuming Training is in 'compone
 import TrainingHome from './component/TrainingHome';
 import WorkingEnvironment from './component/Working-environment';
 import MultipleChoiceTest from './component/MultipleChoice';
-import Lobby from './component/VideoLobby';
+import LobbyT from './component/VideoLobby1.js';
 import MultipleChoiceLobby from './component/MultipleChoiceLobby';
-import Tablet from './component/VideoTablet';
+import Tablet from './component/VideoLobby1.js';
 import MCT from './component/MultipleChoiceTablet';
 import Congratulations from './component/Congratulations';
 import "./App.css"
 import CreateUser from './component/CreateUser';
 import CreateUserAccount from './component/CreateUser';
 import Header from './component/Header';
+import Directory from './component/Directory.js';
 
 function App() {
   const [userName, setUserName] = useState('');
@@ -25,11 +26,12 @@ function App() {
         <Route exact path="/" element={<Training />} />
         <Route path="/working-environment" element={<WorkingEnvironment userName={userName} />} />
         <Route path="/multiple-choice" element={<MultipleChoiceTest userName={userName} />} />
-        <Route path="/video2" element={<Lobby />} />
+        <Route path="/video2" element={<LobbyT />} />
         <Route path="/create-user" element={<CreateUser />} />
         <Route path="/tablet" element={<Tablet />} />
         <Route path="/M-C-L" element={<MultipleChoiceLobby />} />
         <Route path="/M-C-T" element={<MCT />} />
+        <Route path="/directory" element={<Directory />} />
         <Route path="/congra" element={<Congratulations />} />
       </Routes>
       </div>
